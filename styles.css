@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 1rem;
+    font-family: Overpass, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-dark-blue);
+}
+
+.menue {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, hsl(218, 22%, 10%), hsl(214, 19%, 15%) 100%);
+    width: 335px;
+    padding: 2rem 0 2rem;
+    border-radius: 7%;
+}
+
+.menue .star {
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.menue .star img {
+    /* I use flexbox here to center the start inside the div .star */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+}
+
+.menue h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.menue p {
+    font-weight: 400;
+    color: var(--light-grey);
+    margin-bottom: 1.8rem;
+}
+
+.menue ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--medium-grey);
+    margin-bottom: 1.2rem;
+}
+
+.menue ul li {
+    margin-left: 0;
+}
+
+.menue ul li button {
+    height: fit-content;
+    width: 2.9rem;
+    font-size: 15px;
+    color: var(--medium-grey);
+    margin: 0;
+    margin-bottom: 0.2rem;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.menue ul li button:hover {
+    background-color: var(--white);
+}
+
+.menue ul li button:active {
+    transition: 0s;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.menue ul li .selected {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.menue .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menue .submit button {
+    height: 2.7rem;
+    width: 17.5rem;
+    border-radius: 50px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.menue .submit button:active {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+
+/**************************************************************************************/
+
+
+/* thank you state */
+
+.thank-you {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, hsl(218, 22%, 10%), hsl(214, 19%, 15%) 100%);
+    width: 335px;
+    padding: 2rem 0 2rem;
+    border-radius: 7%;
+}
+
+.thank-you div img {
+    margin-bottom: 1rem;
+}
+
+.chosen-rating {
+    width: fit-content;
+    padding: 0.4rem;
+    width: 12rem;
+    border-radius: 42px;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    margin-bottom: 1.8rem;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.thankfull {
+    color: var(--light-grey);
+}
