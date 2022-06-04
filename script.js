@@ -1,6 +1,6 @@
 /* Select your rating */
 
-let ratings = document.querySelectorAll(".menue ul li button");
+let ratings = document.querySelectorAll("main ul li button");
 
 
 ratings.forEach(btn => {
@@ -10,15 +10,17 @@ ratings.forEach(btn => {
 function handleRatingBtnClick(event) {
     ratings.forEach(btn => {
         btn.classList.remove('selected');
+        event.target.classList.add('hovered');
     });
     event.target.classList.add('selected');
-    document.querySelector(".chosen-rating").textContent = 'You selected '+ document.querySelector(".selected").textContent + ' out of 5';
+    event.target.classList.remove('hovered');
+    document.querySelector(".chosen-rating").textContent = 'You selected ' + document.querySelector(".selected").textContent + ' out of 5';
 }
 
-let submit = document.querySelector(".menue .submit button");
+let submit = document.querySelector("main .submit button");
 let finalRating = document.querySelector(".selected");
 
 submit.addEventListener("click", function(e) {
-    document.querySelector(".menue").style.display = "none";
+    document.querySelector("main").style.display = "none";
     document.querySelector(".thank-you").style.display = "flex";
 });

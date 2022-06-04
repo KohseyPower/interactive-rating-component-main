@@ -6,13 +6,10 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
-- [Author](#author)s
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Author](#author)
 
 ## Overview
 
@@ -25,15 +22,6 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with
@@ -42,9 +30,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - JS
-
-
-
 
 ### Useful resources
 
